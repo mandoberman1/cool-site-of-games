@@ -39,6 +39,12 @@ body{
 .footer-link:nth-child(2){
     margin: 0 24px;
 }
+.footer-link:hover{
+    transform: scale(2);
+}
+transform-link:hover{
+    transition: 1s;
+}
 @media(max-width: 420px){
     .first-card-row{
         flex-direction: column;
