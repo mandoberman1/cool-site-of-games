@@ -42,7 +42,7 @@ body{
 .footer-link:hover{
     transform: scale(2);
 }
-transform-link:hover{
+.footer-link:hover{
     transition: 1s;
 }
 @media(max-width: 420px){
