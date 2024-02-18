@@ -103,7 +103,18 @@ body{
     transition: 0.2s ease-in;
 }
 .gta-img:hover {
-    background-color:#8d46f6;
+    animation: gta 5s infinite linear;
+}
+@keyframes gta {
+    to{
+        background-color: #8b72ff;
+    }
+    50%{
+        background-color:darkblue;
+    }
+    from{
+        background-color: #8b72ff;
+    }
 }
 .fortnite-img{
     flex: 1;
@@ -118,7 +129,18 @@ body{
     overflow-y: clip;
 }
 .fortnite-img:hover{
-    background-color: darkgoldenrod;
+    animation: fortnite 3s infinite linear;
+}
+@keyframes fortnite{
+    to{
+        background-color: #e2d113;
+    }
+    50%{
+        background-color: green;
+        from{
+            background-color: #e2d113;
+        }
+    }
 }
 .dota-img{
     width: 100%;
@@ -127,7 +149,7 @@ body{
     justify-content: center;
     align-items: flex-end;
     border-radius: 56px;
-    background-color: #69adfd;
+    background-color: red;
     transition: 0.2s ease-in;
     overflow-y: clip;
 }
@@ -138,5 +160,16 @@ body{
     height: 100%;
 }
 .dota-img:hover{
-    background-color: darkviolet;
+    animation: dota 3s infinite linear;
+}
+@keyframes dota{
+    to{
+        background-color: red;
+    }
+    50%{
+        background-color: cyan;
+    }
+    from{
+        background-color: red;
+    }
 }
