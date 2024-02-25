@@ -91,33 +91,35 @@ body{
     background-color: aqua;
 }
 
-.gta-img {
+.ac-img {
     flex: 1.5;
-    height: 330px;
+    height: 310px;
     width: 100px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     border-radius: 56px;
     margin-right: 30px;
-    background-color: #8b72ff;
+    background-color: rgb(56, 56, 56);
     transition: 0.2s ease-in;
+    animation-play-state:;
 }
-.gta-img:hover {
-    animation: gta 5s infinite linear;
+.ac-img:hover {
+    animation: ac 3s infinite linear;
+    animation-fill-mode: forwards;
 }
-@keyframes gta {
-    to{
-        background-color: #8b72ff;
+@keyframes ac {
+    0%{
+        background-color: rgb(56, 56, 56);
     }
     50%{
-        background-color:darkblue;
+        background-color: rgb(37, 37, 37);
     }
-    from{
-        background-color: #8b72ff;
+    100%{
+        background-color: rgb(56, 56, 56);
     }
 }
-.fortnite-img{
+.subnautica-img{
     flex: 1;
     height: 330px;
     display: flex;
@@ -125,52 +127,53 @@ body{
     align-items: flex-end;
     border-radius:56px ;
     margin-left: 0px;
-    background-color: #e2d113;
+    background-color: #167ccf;
     transition: 0.2s ease-in;
     overflow-y: clip;
 }
-.fortnite-img:hover{
-    animation: fortnite 3s infinite linear;
+.subnautica-img:hover{
+    animation: subnautica 3s infinite linear;
 }
-@keyframes fortnite{
+@keyframes subnautica{
     to{
-        background-color: #e2d113;
+        background-color: #1f7ecc;
     }
     50%{
-        background-color: green;
+        background-color: darkslateblue;
         from{
-            background-color: #e2d113;
+            background-color: #1f7ecc;
         }
     }
 }
-.dota-img{
+.terraria-img{
     width: 100%;
     height: 330px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     border-radius: 56px;
-    background-color: red;
+    background-color: green;
     transition: 0.2s ease-in;
     overflow-y: clip;
+    animation-play-state: paused;
 }
-.dota-img img{
+.terraria-img img{
     object-fit: contain;
     width: 100%;
     object-position: center;
     height: 100%;
 }
-.dota-img:hover{
-    animation: dota 3s infinite linear;
+.terraria-img:hover{
+    animation: terraria 3s infinite linear;
 }
-@keyframes dota{
+@keyframes terraria{
     to{
-        background-color: red;
+        background-color: green;
     }
     50%{
-        background-color: cyan;
+        background-color: rgb(0, 70, 0);
     }
     from{
-        background-color: red;
+        background-color: green ;
     }
 }
