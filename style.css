@@ -102,20 +102,20 @@ body{
     margin-right: 30px;
     background-color: rgb(56, 56, 56);
     transition: 0.2s ease-in;
-    animation-play-state:;
+    animation: ac 3s infinite linear;
+    animation-play-state:paused;
 }
 .ac-img:hover {
-    animation: ac 3s infinite linear;
-    animation-fill-mode: forwards;
+    animation-play-state: running;
 }
 @keyframes ac {
-    0%{
+    from{
         background-color: rgb(56, 56, 56);
     }
     50%{
         background-color: rgb(37, 37, 37);
     }
-    100%{
+    to{
         background-color: rgb(56, 56, 56);
     }
 }
@@ -130,20 +130,21 @@ body{
     background-color: #167ccf;
     transition: 0.2s ease-in;
     overflow-y: clip;
+    animation: subnautica 3s infinite linear paused;
 }
 .subnautica-img:hover{
-    animation: subnautica 3s infinite linear;
+    animation-play-state: running;
 }
 @keyframes subnautica{
-    to{
+    from{
         background-color: #1f7ecc;
     }
     50%{
         background-color: darkslateblue;
-        from{
-            background-color: #1f7ecc;
-        }
+    to{
+        background-color: #1f7ecc;
     }
+}
 }
 .terraria-img{
     width: 100%;
@@ -154,8 +155,8 @@ body{
     border-radius: 56px;
     background-color: green;
     transition: 0.2s ease-in;
-    overflow-y: clip;
-    animation-play-state: paused;
+    overflow-y: clip;  
+    animation: terraria 3s infinite linear paused;
 }
 .terraria-img img{
     object-fit: contain;
@@ -163,17 +164,18 @@ body{
     object-position: center;
     height: 100%;
 }
+
 .terraria-img:hover{
-    animation: terraria 3s infinite linear;
+    animation-play-state: running;
 }
 @keyframes terraria{
-    to{
+    from{
         background-color: green;
     }
     50%{
         background-color: rgb(0, 70, 0);
     }
-    from{
+    to{
         background-color: green ;
     }
 }
