@@ -1,0 +1,26 @@
+extends ../layouts/main-layout
+block content
+    main
+    section.main-content
+      .container
+        .row
+          .col-xxl-7.col-xl-6.col-lg-6.col-md-12
+            .hero-section.pb-5
+              h1.hero-title.text-white.m-0
+                | Прекрасный мир 
+                br
+                | компьютерных игр
+              p.hero-desc.text-white.my-5
+                | Узнай о всём что происходит в виртуальном пространстве
+              a.btn.btn-purple.text-white(href='#') Узнать больше
+          .col-xxl-5.col-xl-6.col-lg-6.col-md-12
+            .card-games.d-flex.flex-column
+              .first-card-row.d-flex.justify-content-between
+                .ac-img
+                  img(src='./img/ассасин.png' alt='' width='400px' height='300px')
+                .subnautica-img
+                  img(src='./img/субнатика.png' alt='' width='200px' height='300px')
+              .terraria-img.mt-4
+                img(src='./img/террария.png' alt='')           
+                                    
+

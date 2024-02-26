@@ -35,12 +35,24 @@ body{
     .btn-purple{
         display: block;
     }
+    .ac-box, .subnautica-box, .terraria-box{
+        height: 100%;
+        background-color: none;
+    }
+    .img-mobile{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .img-mobile img{
+        width: 450px;
+    }
+
 }
 .footer-link:nth-child(2){
     margin: 0 24px;
 }
 .footer-link:hover{
-    transform: scale(2);
+    transform: scale(1.1);
 }
 .footer-link:hover{
     transition: 1s;
@@ -64,6 +76,9 @@ body{
     }
     .footer-link:nth-child(2){
         margin: 0;
+    }
+    .img-mobile img{
+        width: 350px;
     }
 }
 @media (max-width:1400px) {
@@ -179,3 +194,52 @@ body{
         background-color: green ;
     }
 }
+.terraria-box {
+    height: calc(100vh - 112px);
+    background-image: url("./img/pic/terraria-big.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+  }
+.ac-box {
+    height: calc(100vh - 112px);
+    background-image: url("./img/pic/ac-big.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+  }
+.subnautica-box {
+    height: calc(100vh - 112px);
+    background-image: url("./img/pic/fortnite-big.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+  }
+.img-mobile {
+    display: none;
+  }
+.gallery, .articles {
+    background-color: #F1EFE4;
+  }
+  
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    background: transparent;
+    display: flex;
+    align-items: center;
+  }
+.swiper-slide img {
+    display: block;
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+  }
+.swiper-slide {
+    width: 80%;
+  }
