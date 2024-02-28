@@ -106,12 +106,12 @@ body{
     }
 }
 .hero-title{
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1.2;
 }
 .hero-desc{
     line-height: 1.35;
-    font-size: 24px;
+    font-size: 15px;
 }
 .btn-purple{
     background-color: blue;
