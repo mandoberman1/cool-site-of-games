@@ -46,7 +46,16 @@ body{
     .img-mobile img{
         width: 450px;
     }
-
+    .ac-img{
+        margin-bottom: 10px;
+    }
+    .first-card-row{
+        flex-direction: column;
+    }
+    .swiper-slide{
+    width: 100%;
+    height: 100%;
+}
 }
 .footer-link:nth-child(2){
     margin: 0 24px;
@@ -57,15 +66,15 @@ body{
 .footer-link:hover{
     transition: 1s;
 }
+
 @media(max-width: 420px){
     .first-card-row{
         flex-direction: column;
     }
-    .gta-img{
-        margin-bottom: 24px;
-        margin-right: 0px;
+    .ac-img{
+        margin: 0px;
     }
-    .fortnite-img{
+    .subnautica-img{
         margin: 0px;
     }
     .hero-title{
@@ -80,17 +89,24 @@ body{
     .img-mobile img{
         width: 350px;
     }
+    .swiper-slide{
+        width: 100%;
+        height: 100%;
+    }
 }
-@media (max-width:1400px) {
+@media (max-width:1400px) and (min-width:991px) {
     .hero-title{
         font-size: 48px;
     }
     .hero-desc{
         font-size: 20px;
     }
+    .ac-img{
+        width: 300px;
+    }
 }
 .hero-title{
-    font-size: 64px;
+    font-size: 50px;
     line-height: 1.2;
 }
 .hero-desc{
@@ -108,16 +124,16 @@ body{
 
 .ac-img {
     flex: 1.5;
-    height: 310px;
-    width: 100px;
+    height: 330px;
+
     display: flex;
     justify-content: center;
     align-items: flex-end;
     border-radius: 56px;
-    margin-right: 30px;
+    margin-right: 10px;
     background-color: rgb(56, 56, 56);
     transition: 0.2s ease-in;
-    animation: ac 3s infinite linear;
+    animation: ac 2s infinite linear;
     animation-play-state:paused;
 }
 .ac-img:hover {
@@ -145,7 +161,7 @@ body{
     background-color: #167ccf;
     transition: 0.2s ease-in;
     overflow-y: clip;
-    animation: subnautica 3s infinite linear paused;
+    animation: subnautica 2s infinite linear paused;
 }
 .subnautica-img:hover{
     animation-play-state: running;
@@ -171,7 +187,7 @@ body{
     background-color: green;
     transition: 0.2s ease-in;
     overflow-y: clip;  
-    animation: terraria 3s infinite linear paused;
+    animation: terraria 2s infinite linear paused;
 }
 .terraria-img img{
     object-fit: contain;
@@ -206,14 +222,14 @@ body{
     background-image: url("./img/pic/ac-big.png");
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: contain;
+    background-size: cover;
   }
 .subnautica-box {
     height: calc(100vh - 112px);
-    background-image: url("./img/pic/fortnite-big.png");
+    background-image: url("./img/pic/subnautica-big.png");
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: contain;
+    background-size: cover;
   }
 .img-mobile {
     display: none;
@@ -222,24 +238,24 @@ body{
     background-color: #F1EFE4;
   }
   
-.swiper {
+  .swiper {
     width: 100%;
     height: 100%;
   }
-.swiper-slide {
+
+  .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-    background: transparent;
     display: flex;
+    justify-content: center;
     align-items: center;
   }
-.swiper-slide img {
+
+  .swiper-slide img {
     display: block;
-    width: 800px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
-.swiper-slide {
-    width: 80%;
-  }
+  
