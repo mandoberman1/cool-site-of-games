@@ -96,11 +96,11 @@ body{
 }
 @media(max-height: 430px){
     .hero-title{
-        margin-top: -7px !important;
+        margin-top: 5px !important;
         font-size: 30px !important;
     }
     .hero-desc{
-        margin-top: -3px !important;
+        margin-top: 0px !important;
         font-size: 15px !important;
     }
     .gallery-title{
